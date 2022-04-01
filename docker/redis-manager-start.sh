@@ -10,7 +10,7 @@ if [ -n "$CONFIG_URL" ];then
   fi
 fi
 
-if [ "`ls -A data`" = ""]; then
+if [ "`ls -A data`" = "" ]; then
   echo "The data dir is empty."
   cp -r backup_data/* data
 fi
